@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Planificación de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>LISTA DE TAREAS</h1>
+    </header>
+
+    <div>
+    <section>
+        <h2>Crear Nueva Tarea</h2>
+        <label for="tarea">Descripción:</label>
+        <input type="text" id="tarea" placeholder="Escribe la tarea aquí">
+        <label for="plazo">Plazo de entrega:</label>
+        <input type="date" id="plazo">
+        <label for="categoria">que categoria es tu tarea?: </label>
+        <input type="text" id="categoria">
+        <button onclick="añadirTarea()">añadir Tarea</button>
+        <label for="importante">¿Es importante?</label> <input type="checkbox" id="importante">
+      </section>
+
+       
+      <section>
+        <h2>Lista de Tareas</h2>
+        <ul id="lista-tareas">
+          <!-- Las tareas aparecerán aquí -->
+        </ul>
+      </section>
+  
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
